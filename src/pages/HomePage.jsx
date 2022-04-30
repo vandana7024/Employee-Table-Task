@@ -4,7 +4,7 @@ import { heading, data } from "../components/TableData";
 
 function HomePage() {
   const [filterData, setFilterData] = useState(data);
-  console.log(filterData, "k");
+
   const handleSearch = (e) => {
     const filtered = data.filter((item) => {
       return (
