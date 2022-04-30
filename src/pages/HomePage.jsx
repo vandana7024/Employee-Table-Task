@@ -3,7 +3,11 @@ import Table from "../components/Table";
 import { heading, data } from "../components/TableData";
 
 function HomePage() {
-  const [filterData, setFilterData] = useState(data);
+  const [filterData, setFilterData] = useState([]);
+
+  React.useEffect(() => {
+    setFilterData(data);
+  }, []);
 
   const handleSearch = (e) => {
     const filtered = data.filter((item) => {
