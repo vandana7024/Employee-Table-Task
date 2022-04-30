@@ -3,10 +3,10 @@ import React from "react";
 function Table({ heading = [], data = [] }) {
   return (
     <>
-      <div class=" h-full md:h-96 w-full object-contain overflow-auto relative flex justify-center items-start">
-        <table class="border border-blue-500 ">
+      <div className=" h-full md:h-96 w-full object-contain overflow-auto relative flex justify-center items-start">
+        <table className="border border-blue-500 ">
           <thead className="sticky top-0 text-white">
-            <tr class="bg-blue-500 text-center ">
+            <tr className="bg-blue-500 text-center ">
               {heading?.map((heading, index) => (
                 <th
                   key={index}
